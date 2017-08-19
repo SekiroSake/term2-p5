@@ -2,6 +2,11 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+*Project Questions & Solutions*
+<p align="center">
+<a href="https://youtu.be/vyWh4aowlJo" target="_blank"><img src="http://img.youtube.com/vi/vyWh4aowlJo/0.jpg" 
+alt="MPC" width="480" height="360" border="10" /></a>
+</p>
 
 ## Dependencies
 
