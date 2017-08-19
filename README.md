@@ -8,6 +8,21 @@ Self-Driving Car Engineer Nanodegree Program
 alt="MPC" width="480" height="360" border="10" /></a>
 </p>
 
+## Model
+Used the model presented in the learning material. The model includes:
+- x_: X position
+- y_: Y position
+- psi_: direction
+- v_: the velocity of the vehicle in the direction
+- cte_: Cross track error
+- epsi_: direction error
+
+Actuators:
+- Steering(delta_): The steering of front wheels controlls the direction
+- Throttle(a_): Controlls the speed(up and down) of the vehicle
+
+Update functions:
+
 ## Dependencies
 
 * cmake >= 3.5
