@@ -26,6 +26,10 @@ Update functions:
 * ![Update Equations](https://github.com/hang-wang/term2-p5/blob/master/update2.png?raw=true "Update1")
 
 ## Timestep Length and Elapsed Duration (N & dt)
+N is the number of timesteps in the horizon. dt is how much time elapses between actuations. T(prediction horizon) as product of N and dt is the duration over which future predictions are made. The purpose of tuning T is to optimize the controll. In the project, I chose N = 10 and dt = 0.1 which performs very well on my device (mid 2015 15' macbook pro). 
+
+## Polynomial Fitting and MPC Preprocessing
+
 
 ## Dependencies
 
