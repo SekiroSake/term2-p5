@@ -39,6 +39,9 @@ Implementation in the code:
                         waypoints_y.push_back(dx * sin(-psi) + dy * cos(-psi));
                     }
 ```
+```
+                    auto coeffs = polyfit(waypoints_x_eig, waypoints_y_eig, 3);
+```
 
 ## Model Predictive Control with Latency
 
