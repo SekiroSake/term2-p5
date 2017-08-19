@@ -25,6 +25,8 @@ Update functions:
 * ![Update Equations](https://github.com/hang-wang/term2-p5/blob/master/update.png?raw=true "Update1")
 * ![Update Equations](https://github.com/hang-wang/term2-p5/blob/master/update2.png?raw=true "Update1")
 
+## Timestep Length and Elapsed Duration (N & dt)
+
 ## Dependencies
 
 * cmake >= 3.5
