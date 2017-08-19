@@ -73,14 +73,19 @@ public:
         //
         // NOTE: In this section you'll setup the model constraints.
         
-        // Init constraints
-        
+        // Initial constraints
+        //
+        // We add 1 to each of the starting indices due to cost being located at
+        // index 0 of `fg`.
+        // This bumps up the position of all the other values.
+        fg[1 + x_start] = vars[x_start];
         fg[1 + y_start] = vars[y_start];
         fg[1 + psi_start] = vars[psi_start];
         fg[1 + v_start] = vars[v_start];
         fg[1 + cte_start] = vars[cte_start];
         fg[1 + epsi_start] = vars[epsi_start];
         
+        // The rest of the constraints
         for (int t = 1; t < N; t++) {
             AD<double> x1 = vars[x_start + t];
             AD<double> x0 = vars[x_start + t - 1];
@@ -129,6 +134,7 @@ MPC::~MPC() {}
 
 vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     bool ok = true;
+    size_t i;
     typedef CPPAD_TESTVECTOR(double) Dvector;
     
     double x = state[0];
@@ -243,8 +249,8 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     ok &= solution.status == CppAD::ipopt::solve_result<Dvector>::success;
     
     // Cost
-   // auto cost = solution.obj_value;
-    //std::cout << "Cost " << cost << std::endl;
+    auto cost = solution.obj_value;
+    std::cout << "Cost " << cost << std::endl;
     
     // TODO: Return the first actuator values. The variables can be accessed with
     // `solution.x[i]`.

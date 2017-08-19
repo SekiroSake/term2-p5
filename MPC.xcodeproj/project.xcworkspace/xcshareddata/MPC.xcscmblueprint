@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0C7B5B7CD8BF4B76854A0A255D9231E7B17184AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6A60877FD8F8A3297354ACC46B9B5572617BE270" : 9223372036854775807,
+    "0C7B5B7CD8BF4B76854A0A255D9231E7B17184AE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8C95962E-FC9F-4B72-BC14-13119E2729C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6A60877FD8F8A3297354ACC46B9B5572617BE270" : "Term2\/",
+    "0C7B5B7CD8BF4B76854A0A255D9231E7B17184AE" : "term2-p5\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MPC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MPC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hang-wang\/term2-p5.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C7B5B7CD8BF4B76854A0A255D9231E7B17184AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hang-wang\/Term2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6A60877FD8F8A3297354ACC46B9B5572617BE270"
+    }
+  ]
+}
