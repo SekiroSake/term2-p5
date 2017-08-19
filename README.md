@@ -8,7 +8,7 @@ Self-Driving Car Engineer Nanodegree Program
 alt="MPC" width="480" height="360" border="10" /></a>
 </p>
 
-## Model
+## The Model
 Used the model presented in the learning material. The model includes:
 - x_: X position
 - y_: Y position
@@ -22,6 +22,8 @@ Actuators:
 - Throttle(a_): Controlls the speed(up and down) of the vehicle
 
 Update functions:
+![Update Equations](https://github.com/hang-wang/term2-p5/blob/master/update.png?raw=true "Update1")
+![Update Equations](https://github.com/hang-wang/term2-p5/blob/master/update2.png?raw=true "Update1")
 
 ## Dependencies
 
