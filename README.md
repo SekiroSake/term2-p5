@@ -29,6 +29,18 @@ Update functions:
 N is the number of timesteps in the horizon. dt is how much time elapses between actuations. T(prediction horizon) as product of N and dt is the duration over which future predictions are made. The purpose of tuning T is to optimize the controll. In the project, I chose N = 10 and dt = 0.1 which performs very well on my device (mid 2015 15' macbook pro). 
 
 ## Polynomial Fitting and MPC Preprocessing
+For each pass of the timestep, the waypoints are converted to the vehicle coordinates in order to follow the trajectory. After that, the MPC control approximates the trajectory with 3rd order polynomial. 
+Implementation in the code:
+```
+                    for (int i = 0; i < ptsx.size(); i++) {
+                        double dx = ptsx[i] - px;
+                        double dy = ptsy[i] - py;
+                        waypoints_x.push_back(dx * cos(-psi) - dy * sin(-psi));
+                        waypoints_y.push_back(dx * sin(-psi) + dy * cos(-psi));
+                    }
+```
+
+## Model Predictive Control with Latency
 
 
 ## Dependencies
