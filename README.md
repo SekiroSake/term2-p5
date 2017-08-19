@@ -44,6 +44,12 @@ Implementation in the code:
 ```
 
 ## Model Predictive Control with Latency
+In order to handle a 100 millisecond latency, there is a seperate timestep with dt = 100 ms and send the transation feedback as the starting point ot the MPC.
+Implementation in the code:
+```
+                    this_thread::sleep_for(chrono::milliseconds(100));
+                    ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
+```
 
 
 ## Dependencies
